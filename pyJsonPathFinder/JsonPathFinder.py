@@ -2,13 +2,13 @@
 # encoding:utf-8
 # @Time    : 2023/03/12 16:08
 # @Author  : Yimning
-# @Comment :
+# @Comment : pyJsonPathFinder
 
 import json
 
 # eval()方法二次封装
 def eval_str(str_data):
-    # eval()对特殊值处理
+    # eval()对特殊值处理  
     null = ""
     true = True
     false = False
