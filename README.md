@@ -1,4 +1,4 @@
-# pythonExercises
+# pythonExercises for personal
 
 
 
@@ -6,7 +6,8 @@
 
 
 
-
+  
+  
 
 
 
