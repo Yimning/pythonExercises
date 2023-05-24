@@ -417,10 +417,10 @@ if __name__ == '__main__':
   # 启动服务器
   #api.debug = True         #改了代码后，不用重启，它会自动重启
   # 增加session会话保护(任意字符串,用来对session进行加密)
-  api.secret_key = 'carson'
+  api.secret_key = 'carson' 
   try:
     api.run(port=8888,debug=True,host='127.0.0.1') # 启动服务
-  except Exception as err:
+  except Exception as err:  
     print(err)
     db.close()  # 关闭数据库连接
 
@@ -446,3 +446,5 @@ if __name__ == '__main__':
 # json.JSONDecoder.decode(self, s, *, idx=0): 将 JSON 字符串反序列化为 Python 对象。
 
 # 以上这些方法都是处理 JSON 格式数据必不可少的，它们提供了序列化和反序列化 JSON 数据的功能，同时还可以进行自定义编码和解码操作。在使用时，我们可以根据具体需求选择适合的方法来处理 JSON 数据。
+
+# 程序打包 ：pyinstaller -F mistep_msyql.py  resultEntity.py  userEntity.py 
