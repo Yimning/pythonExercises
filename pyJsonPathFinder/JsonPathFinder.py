@@ -13,7 +13,7 @@ def eval_str(str_data):
     true = True
     false = False
     return eval(str_data)
-
+   
 
 def is_numeric(s):
     if s.startswith("-") or s.startswith("+") or "." in s:
