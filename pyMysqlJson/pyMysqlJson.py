@@ -139,7 +139,7 @@ def updateUser(jsonStr):
         ret = cursor.execute(sql, (userEntity.user,userEntity.password,userEntity.step,userEntity.total,userEntity.steptime,userEntity.type,userEntity.url,userEntity.jointime,userEntity.user))
         
         # 处理更新结果
-        if ret == 1:
+        if ret == 1:    
             retEntity.code = 0
             retEntity.message = "Successfully updated User Info."
         else:

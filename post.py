@@ -16,7 +16,7 @@ def uploadFile(url,fileName):
             'Connection':'close',
             'content-type': 'application/json;charset=UTF-8'
         }
-
+  
         payload={}
 
 
