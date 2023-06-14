@@ -138,19 +138,19 @@ def updateUser(jsonStr):
         sql = "update user set user=%s,password=%s,step=%s,total=%s,steptime=%s,type=%s,url=%s,jointime=%s where user=%s;"
         ret = cursor.execute(sql, (userEntity.user,userEntity.password,userEntity.step,userEntity.total,userEntity.steptime,userEntity.type,userEntity.url,userEntity.jointime,userEntity.user))
         
-        # 处理更新结果
-        if ret == 1:      
-            retEntity.code = 0
+        # 处理更新结果   
+        if ret == 1:        
+            retEntity.code = 0  
             retEntity.message = "Successfully updated User Info."
-        else:
-            retEntity.code = -1  
+        else:   
+            retEntity.code = -1     
             retEntity.message = f"User '{userEntity.user}' not found or no fields to update."
 
         # 提交事务
         db.commit()
     except Exception as err:
         # 发生异常时回滚事务
-        db.rollback()
+        db.rollback() 
         retEntity.code = -1
         retEntity.message = str(err)
         print("updateUser:",err)
