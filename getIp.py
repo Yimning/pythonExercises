@@ -13,7 +13,7 @@
 #       python -u "e:\Work\python\01\logCollection.py"
 #       pyinstaller -D -w .\logCollection.py
 #
-import os
+import os   
 
 #ip = IP('192.168.43.0/16')
 
