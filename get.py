@@ -23,7 +23,7 @@ def uploadFile(url,fileName):
         return  response
     except Exception as e:
         print('异常:',e)
-        return 
+        return      
 
  
 if __name__ == "__main__":
