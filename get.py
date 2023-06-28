@@ -26,7 +26,7 @@ def uploadFile(url,fileName):
         return      
 
  
-if __name__ == "__main__":
+if __name__ == "__main__":    
 
     response = uploadFile('https://cx.shouji.360.cn/phonearea.php?number=17878416534',"data")
     if(response != None):
