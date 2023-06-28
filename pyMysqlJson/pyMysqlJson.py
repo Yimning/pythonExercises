@@ -25,7 +25,7 @@ db = pymysql.connect(host='120.77.xxx.233', port=3306, user='root',
                      password='123456', database='test', charset='utf8',cursorclass=cursors.DictCursor)
                      
 # 操作数据库，获取db下的cursor对象
-cursor = db.cursor()
+cursor = db.cursor()   
 
 class DateEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -33,7 +33,7 @@ class DateEncoder(json.JSONEncoder):
             return obj.strftime("%Y-%m-%d %H:%M:%S")
         else:
             return json.JSONEncoder.default(self, obj)
-
+   
 
 def userDecoder(userDict):
     return namedtuple('userEntity', userDict.keys())(*userDict.values())
@@ -50,7 +50,7 @@ def eval_str(str_data):
     false = False
     return eval(str_data)
 
-
+# 判断是否是数字
 def is_numeric(s):
     if s.startswith("-") or s.startswith("+") or "." in s:
         return all(c in "0123456789.+-" for c in s)
