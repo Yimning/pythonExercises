@@ -1,7 +1,5 @@
 # pythonExercises for personal
 
-   
-  hh
 
    
 
