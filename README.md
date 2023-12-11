@@ -1,6 +1,5 @@
 # pythonExercises for personal
 
-
    
 
    
