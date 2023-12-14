@@ -1,13 +1,1 @@
 # pythonExercises for personal
-
-   
-
-   
-
-
-    
-
-
-    
-
-
